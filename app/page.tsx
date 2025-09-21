@@ -9,7 +9,7 @@ import dynamic from 'next/dynamic'
 
 // Dynamically import the LightRays component with SSR disabled
 const LightRays = dynamic(
-  () => import("@/components/ui/Hyperspeed").then(mod => mod.LightRays),
+  () => import("@/components/ui/LightRays").then(mod => mod.LightRays),
   { 
     ssr: false,
     loading: () => <div className="absolute inset-0 bg-a" />
