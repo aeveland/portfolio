@@ -24,12 +24,13 @@ export default function Home() {
   return (
     <main className="min-h-screen">
       {/* Hero Section */}
-      <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-a">
+      <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-a px-4 pt-32 md:pt-0">
         <LightRays />
-        <div className="relative z-10 container-wide text-center">
-          <div className="max-w-4xl mx-auto space-y-8">
-            <h1>Andy Eveland, Product Designer</h1>
-            <p className="text-muted-foreground max-w-2xl mx-auto">
+        <div className="relative z-10 w-full text-center px-4">
+          <div className="max-w-4xl mx-auto space-y-6 md:space-y-8">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl">Andy Eveland</h1>
+            <h2 className="text-xl sm:text-2xl text-muted-foreground">Product Designer</h2>
+            <p className="text-muted-foreground max-w-2xl mx-auto text-sm sm:text-base">
               I turn complex ideas into simple workflows across mobile, web, and&nbsp;spatial.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8">
