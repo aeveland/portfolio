@@ -11,10 +11,6 @@ const LightRays = dynamic(() => import("@/components/ui/hyperspeed").then(mod =>
   ssr: false
 })
 
-const ParticleSystem = dynamic(() => import("@/components/ui/particle-system").then(mod => ({ default: mod.ParticleSystem })), {
-  ssr: false
-})
-
 import { SmoothWave, SmoothWaveAlt, SmoothWaveDeep, SmoothWaveGentle, SmoothWaveComplex } from "@/components/ui/dividers"
 import { ExternalLink, Twitter, Github, MapPin, Map as MapIcon, QrCode } from "lucide-react"
 import Link from "next/link"
@@ -22,9 +18,6 @@ import Link from "next/link"
 export default function Home() {
   return (
     <main className="min-h-screen">
-      {/* Interactive Particle System */}
-      <ParticleSystem />
-      
       {/* Hero Section */}
       <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-a">
         <LightRays />
