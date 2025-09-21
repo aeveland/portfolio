@@ -7,7 +7,7 @@ import { ScrollButton } from "@/components/ui/scroll-button"
 import { AnimatedSection, StaggeredChildren } from "@/components/ui/animated-section"
 import dynamic from 'next/dynamic'
 
-const LightRays = dynamic(() => import("@/components/ui/hyperspeed").then(mod => ({ default: mod.LightRays })), {
+const LightRays = dynamic(() => import("@/components/ui/Hyperspeed").then(mod => ({ default: mod.LightRays })), {
   ssr: false
 })
 
