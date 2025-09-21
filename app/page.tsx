@@ -16,7 +16,7 @@ const ParticleSystem = dynamic(() => import("@/components/ui/particle-system").t
 })
 
 import { SmoothWave, SmoothWaveAlt, SmoothWaveDeep, SmoothWaveGentle, SmoothWaveComplex } from "@/components/ui/dividers"
-import { ExternalLink, Twitter, Github } from "lucide-react"
+import { ExternalLink, Twitter, Github, MapPin, Map as MapIcon, QrCode } from "lucide-react"
 import Link from "next/link"
 
 export default function Home() {
@@ -119,7 +119,14 @@ export default function Home() {
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               <AnimatedSection delay={0}>
                 <Link href="/arcgis-indoors">
-                  <Card className="group hover:bg-card/80 transition-all duration-300 border-border/50 cursor-pointer">
+                  <Card className="group hover:bg-card/80 transition-all duration-300 border-border/50 cursor-pointer overflow-hidden">
+                    <div className="relative w-full aspect-video bg-gradient-to-br from-blue-500/20 to-purple-500/20 flex items-center justify-center">
+                      <div className="absolute inset-0 bg-[url('/grid-pattern.svg')] opacity-10"></div>
+                      <div className="text-center p-4 z-10">
+                        <MapPin className="w-8 h-8 mx-auto mb-2 text-blue-400" />
+                        <span className="text-sm text-muted-foreground">ArcGIS Indoors</span>
+                      </div>
+                    </div>
                     <CardHeader>
                       <CardTitle className="text-xl">ArcGIS Indoors</CardTitle>
                       <CardDescription>
@@ -137,7 +144,14 @@ export default function Home() {
 
               <AnimatedSection delay={150}>
                 <Link href="/arcgis-field-maps">
-                  <Card className="group hover:bg-card/80 transition-all duration-300 border-border/50 cursor-pointer">
+                  <Card className="group hover:bg-card/80 transition-all duration-300 border-border/50 cursor-pointer overflow-hidden">
+                    <div className="relative w-full aspect-video bg-gradient-to-br from-green-500/20 to-blue-500/20 flex items-center justify-center">
+                      <div className="absolute inset-0 bg-[url('/grid-pattern.svg')] opacity-10"></div>
+                      <div className="text-center p-4 z-10">
+                        <MapPin className="w-8 h-8 mx-auto mb-2 text-green-400" />
+                        <span className="text-sm text-muted-foreground">ArcGIS Field Maps</span>
+                      </div>
+                    </div>
                     <CardHeader>
                       <CardTitle className="text-xl">ArcGIS Field Maps</CardTitle>
                       <CardDescription>
@@ -155,7 +169,14 @@ export default function Home() {
 
               <AnimatedSection delay={300}>
                 <Link href="/foreflight-logbook">
-                  <Card className="group hover:bg-card/80 transition-all duration-300 border-border/50 cursor-pointer">
+                  <Card className="group hover:bg-card/80 transition-all duration-300 border-border/50 cursor-pointer overflow-hidden">
+                    <div className="relative w-full aspect-video bg-gradient-to-br from-amber-500/20 to-orange-500/20 flex items-center justify-center">
+                      <div className="absolute inset-0 bg-[url('/grid-pattern.svg')] opacity-10"></div>
+                      <div className="text-center p-4 z-10">
+                        <MapPin className="w-8 h-8 mx-auto mb-2 text-amber-400" />
+                        <span className="text-sm text-muted-foreground">ForeFlight Logbook</span>
+                      </div>
+                    </div>
                     <CardHeader>
                       <CardTitle className="text-xl">ForeFlight Logbook</CardTitle>
                       <CardDescription>
@@ -244,7 +265,15 @@ export default function Home() {
             
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               <Link href="/glamis-map" className="block h-full">
-                <Card className="group h-full hover:bg-card/80 transition-all duration-300 border-border/50">
+                <Card className="group h-full hover:bg-card/80 transition-all duration-300 border-border/50 overflow-hidden">
+                  <div className="relative w-full aspect-video bg-gradient-to-br from-amber-500/20 to-orange-500/20 flex items-center justify-center">
+                    <div className="absolute inset-0 bg-[url('/grid-pattern.svg')] opacity-10"></div>
+                    <div className="text-center p-4 z-10">
+                        <MapIcon className="w-8 h-8 mx-auto mb-2 text-amber-400" />
+                      <span className="text-sm text-muted-foreground">Glamis Map</span>
+                    </div>
+                    <div className="absolute inset-0 bg-gradient-to-br from-current to-transparent opacity-20"></div>
+                  </div>
                   <CardHeader>
                     <CardTitle className="text-xl">Glamis Map</CardTitle>
                     <CardDescription>
@@ -261,7 +290,15 @@ export default function Home() {
               </Link>
 
               <Link href="/campbase" className="block h-full">
-                <Card className="group h-full hover:bg-card/80 transition-all duration-300 border-border/50">
+                <Card className="group h-full hover:bg-card/80 transition-all duration-300 border-border/50 overflow-hidden">
+                  <div className="relative w-full aspect-video bg-gradient-to-br from-green-500/20 to-blue-500/20 flex items-center justify-center">
+                    <div className="absolute inset-0 bg-[url('/grid-pattern.svg')] opacity-10"></div>
+                    <div className="text-center p-4 z-10">
+                        <MapPin className="w-8 h-8 mx-auto mb-2 text-green-400" />
+                      <span className="text-sm text-muted-foreground">CampBase</span>
+                    </div>
+                    <div className="absolute inset-0 bg-gradient-to-br from-current to-transparent opacity-20"></div>
+                  </div>
                   <CardHeader>
                     <CardTitle className="text-xl">CampBase</CardTitle>
                     <CardDescription>
@@ -278,7 +315,15 @@ export default function Home() {
               </Link>
 
               <Link href="/memory-map" className="block h-full">
-                <Card className="group h-full hover:bg-card/80 transition-all duration-300 border-border/50">
+                <Card className="group h-full hover:bg-card/80 transition-all duration-300 border-border/50 overflow-hidden">
+                  <div className="relative w-full aspect-video bg-gradient-to-br from-purple-500/20 to-pink-500/20 flex items-center justify-center">
+                    <div className="absolute inset-0 bg-[url('/grid-pattern.svg')] opacity-10"></div>
+                    <div className="text-center p-4 z-10">
+                        <QrCode className="w-8 h-8 mx-auto mb-2 text-purple-400" />
+                      <span className="text-sm text-muted-foreground">Memory Map</span>
+                    </div>
+                    <div className="absolute inset-0 bg-gradient-to-br from-current to-transparent opacity-20"></div>
+                  </div>
                   <CardHeader>
                     <CardTitle className="text-xl">Memory Map</CardTitle>
                     <CardDescription>
