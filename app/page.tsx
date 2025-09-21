@@ -7,9 +7,14 @@ import { ScrollButton } from "@/components/ui/scroll-button"
 import { AnimatedSection, StaggeredChildren } from "@/components/ui/animated-section"
 import dynamic from 'next/dynamic'
 
-const LightRays = dynamic(() => import("@/components/ui/Hyperspeed").then(mod => ({ default: mod.LightRays })), {
-  ssr: false
-})
+// Dynamically import the LightRays component with SSR disabled
+const LightRays = dynamic(
+  () => import("@/components/ui/Hyperspeed").then(mod => mod.LightRays),
+  { 
+    ssr: false,
+    loading: () => <div className="absolute inset-0 bg-a" />
+  }
+)
 
 import { SmoothWave, SmoothWaveAlt, SmoothWaveDeep, SmoothWaveGentle, SmoothWaveComplex } from "@/components/ui/dividers"
 import { ExternalLink, Twitter, Github, MapPin, Map as MapIcon, QrCode } from "lucide-react"
