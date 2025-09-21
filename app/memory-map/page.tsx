@@ -23,7 +23,7 @@ export default function MemoryMapPage() {
             
             <AnimatedSection delay={200}>
               <h1 className="text-4xl md:text-6xl font-bold mb-6">
-                Living Memory Map
+                Memory Map
               </h1>
             </AnimatedSection>
             

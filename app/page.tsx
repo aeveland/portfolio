@@ -113,15 +113,20 @@ export default function Home() {
               <AnimatedSection delay={0}>
                 <Link href="/arcgis-indoors">
                   <Card className="group hover:bg-card/80 transition-all duration-300 border-border/50 cursor-pointer overflow-hidden">
-                    <div className="relative w-full aspect-video bg-gradient-to-br from-blue-500/20 to-purple-500/20 flex items-center justify-center">
-                      <div className="absolute inset-0 bg-[url('/grid-pattern.svg')] opacity-10"></div>
-                      <div className="text-center p-4 z-10">
-                        <MapPin className="w-8 h-8 mx-auto mb-2 text-blue-400" />
-                        <span className="text-sm text-muted-foreground">ArcGIS Indoors</span>
+                    <div className="relative w-full aspect-video overflow-hidden">
+                      <img 
+                        src="/ArcGISIndoors.PNG" 
+                        alt="ArcGIS Indoors" 
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end pb-4 pl-6 pr-4">
+                        <div className="text-white">
+                          <MapPin className="w-6 h-6 mb-1.5 text-blue-300" />
+                          <span className="text-base font-semibold">ArcGIS Indoors</span>
+                        </div>
                       </div>
                     </div>
-                    <CardHeader>
-                      <CardTitle className="text-xl">ArcGIS Indoors</CardTitle>
+                    <CardHeader className="pt-4">
                       <CardDescription>
                         Complete redesign transforming legacy app into modern indoor navigation platform.
                       </CardDescription>
@@ -138,15 +143,20 @@ export default function Home() {
               <AnimatedSection delay={150}>
                 <Link href="/arcgis-field-maps">
                   <Card className="group hover:bg-card/80 transition-all duration-300 border-border/50 cursor-pointer overflow-hidden">
-                    <div className="relative w-full aspect-video bg-gradient-to-br from-green-500/20 to-blue-500/20 flex items-center justify-center">
-                      <div className="absolute inset-0 bg-[url('/grid-pattern.svg')] opacity-10"></div>
-                      <div className="text-center p-4 z-10">
-                        <MapPin className="w-8 h-8 mx-auto mb-2 text-green-400" />
-                        <span className="text-sm text-muted-foreground">ArcGIS Field Maps</span>
+                    <div className="relative w-full aspect-video overflow-hidden">
+                      <img 
+                        src="/FieldMaps.PNG" 
+                        alt="ArcGIS Field Maps" 
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end pb-4 pl-6 pr-4">
+                        <div className="text-white">
+                          <MapPin className="w-6 h-6 mb-1.5 text-green-300" />
+                          <span className="text-base font-semibold">ArcGIS Field Maps</span>
+                        </div>
                       </div>
                     </div>
-                    <CardHeader>
-                      <CardTitle className="text-xl">ArcGIS Field Maps</CardTitle>
+                    <CardHeader className="pt-4">
                       <CardDescription>
                         Designing accuracy-focused workflows for survey-grade data collection.
                       </CardDescription>
@@ -163,15 +173,20 @@ export default function Home() {
               <AnimatedSection delay={300}>
                 <Link href="/foreflight-logbook">
                   <Card className="group hover:bg-card/80 transition-all duration-300 border-border/50 cursor-pointer overflow-hidden">
-                    <div className="relative w-full aspect-video bg-gradient-to-br from-amber-500/20 to-orange-500/20 flex items-center justify-center">
-                      <div className="absolute inset-0 bg-[url('/grid-pattern.svg')] opacity-10"></div>
-                      <div className="text-center p-4 z-10">
-                        <MapPin className="w-8 h-8 mx-auto mb-2 text-amber-400" />
-                        <span className="text-sm text-muted-foreground">ForeFlight Logbook</span>
+                    <div className="relative w-full aspect-video overflow-hidden">
+                      <img 
+                        src="/ForeFlight.PNG" 
+                        alt="ForeFlight Logbook" 
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end pb-4 pl-6 pr-4">
+                        <div className="text-white">
+                          <MapPin className="w-6 h-6 mb-1.5 text-amber-300" />
+                          <span className="text-base font-semibold">ForeFlight Logbook</span>
+                        </div>
                       </div>
                     </div>
-                    <CardHeader>
-                      <CardTitle className="text-xl">ForeFlight Logbook</CardTitle>
+                    <CardHeader className="pt-4">
                       <CardDescription>
                         Digital logbook designed for pilots who trust their records.
                       </CardDescription>
@@ -259,16 +274,20 @@ export default function Home() {
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               <Link href="/glamis-map" className="block h-full">
                 <Card className="group h-full hover:bg-card/80 transition-all duration-300 border-border/50 overflow-hidden">
-                  <div className="relative w-full aspect-video bg-gradient-to-br from-amber-500/20 to-orange-500/20 flex items-center justify-center">
-                    <div className="absolute inset-0 bg-[url('/grid-pattern.svg')] opacity-10"></div>
-                    <div className="text-center p-4 z-10">
-                        <MapIcon className="w-8 h-8 mx-auto mb-2 text-amber-400" />
-                      <span className="text-sm text-muted-foreground">Glamis Map</span>
+                  <div className="relative w-full aspect-video overflow-hidden">
+                    <img 
+                      src="/GlamisMap.PNG" 
+                      alt="Glamis Map" 
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end pb-4 pl-6 pr-4">
+                      <div className="text-white">
+                        <MapIcon className="w-6 h-6 mb-1.5 text-amber-300" />
+                        <span className="text-base font-semibold">Glamis Map</span>
+                      </div>
                     </div>
-                    <div className="absolute inset-0 bg-gradient-to-br from-current to-transparent opacity-20"></div>
                   </div>
-                  <CardHeader>
-                    <CardTitle className="text-xl">Glamis Map</CardTitle>
+                  <CardHeader className="pt-4">
                     <CardDescription>
                       Interactive map of the dunes with GPX and local history.
                     </CardDescription>
@@ -284,16 +303,20 @@ export default function Home() {
 
               <Link href="/campbase" className="block h-full">
                 <Card className="group h-full hover:bg-card/80 transition-all duration-300 border-border/50 overflow-hidden">
-                  <div className="relative w-full aspect-video bg-gradient-to-br from-green-500/20 to-blue-500/20 flex items-center justify-center">
-                    <div className="absolute inset-0 bg-[url('/grid-pattern.svg')] opacity-10"></div>
-                    <div className="text-center p-4 z-10">
-                        <MapPin className="w-8 h-8 mx-auto mb-2 text-green-400" />
-                      <span className="text-sm text-muted-foreground">CampBase</span>
+                  <div className="relative w-full aspect-video overflow-hidden">
+                    <img 
+                      src="/CampBase.PNG" 
+                      alt="CampBase" 
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end pb-4 pl-6 pr-4">
+                      <div className="text-white">
+                        <MapPin className="w-6 h-6 mb-1.5 text-green-300" />
+                        <span className="text-base font-semibold">CampBase</span>
+                      </div>
                     </div>
-                    <div className="absolute inset-0 bg-gradient-to-br from-current to-transparent opacity-20"></div>
                   </div>
-                  <CardHeader>
-                    <CardTitle className="text-xl">CampBase</CardTitle>
+                  <CardHeader className="pt-4">
                     <CardDescription>
                       Group camping planner with offline maps and shared tasks.
                     </CardDescription>
@@ -309,16 +332,20 @@ export default function Home() {
 
               <Link href="/memory-map" className="block h-full">
                 <Card className="group h-full hover:bg-card/80 transition-all duration-300 border-border/50 overflow-hidden">
-                  <div className="relative w-full aspect-video bg-gradient-to-br from-purple-500/20 to-pink-500/20 flex items-center justify-center">
-                    <div className="absolute inset-0 bg-[url('/grid-pattern.svg')] opacity-10"></div>
-                    <div className="text-center p-4 z-10">
-                        <QrCode className="w-8 h-8 mx-auto mb-2 text-purple-400" />
-                      <span className="text-sm text-muted-foreground">Memory Map</span>
+                  <div className="relative w-full aspect-video overflow-hidden">
+                    <img 
+                      src="/MemoryMap.PNG" 
+                      alt="Memory Map" 
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end pb-4 pl-6 pr-4">
+                      <div className="text-white">
+                        <QrCode className="w-6 h-6 mb-1.5 text-purple-300" />
+                        <span className="text-base font-semibold">Memory Map</span>
+                      </div>
                     </div>
-                    <div className="absolute inset-0 bg-gradient-to-br from-current to-transparent opacity-20"></div>
                   </div>
-                  <CardHeader>
-                    <CardTitle className="text-xl">Memory Map</CardTitle>
+                  <CardHeader className="pt-4">
                     <CardDescription>
                       Photos tied to place and time with a QR print.
                     </CardDescription>
