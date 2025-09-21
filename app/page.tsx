@@ -17,6 +17,7 @@ const ParticleSystem = dynamic(() => import("@/components/ui/particle-system").t
 
 import { SmoothWave, SmoothWaveAlt, SmoothWaveDeep, SmoothWaveGentle, SmoothWaveComplex } from "@/components/ui/dividers"
 import { ExternalLink, Twitter, Github } from "lucide-react"
+import Link from "next/link"
 
 export default function Home() {
   return (
@@ -117,51 +118,57 @@ export default function Home() {
             
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               <AnimatedSection delay={0}>
-                <Card className="group hover:bg-card/80 transition-all duration-300 border-border/50">
-                  <CardHeader>
-                    <CardTitle className="text-xl">ArcGIS Indoors Mobile</CardTitle>
-                    <CardDescription>
-                      Wayfinding and reservations at scale.
-                    </CardDescription>
-                  </CardHeader>
-                  <CardContent className="pt-4">
-                    <span className="text-primary hover:text-primary/80 cursor-pointer inline-flex items-center text-sm transition-colors">
-                      View Design <ExternalLink className="ml-1 h-3 w-3" />
-                    </span>
-                  </CardContent>
-                </Card>
+                <Link href="/arcgis-indoors">
+                  <Card className="group hover:bg-card/80 transition-all duration-300 border-border/50 cursor-pointer">
+                    <CardHeader>
+                      <CardTitle className="text-xl">ArcGIS Indoors</CardTitle>
+                      <CardDescription>
+                        Complete redesign transforming legacy app into modern indoor navigation platform.
+                      </CardDescription>
+                    </CardHeader>
+                    <CardContent className="pt-4">
+                      <span className="text-primary hover:text-primary/80 inline-flex items-center text-sm transition-colors">
+                        View Design <ExternalLink className="ml-1 h-3 w-3" />
+                      </span>
+                    </CardContent>
+                  </Card>
+                </Link>
               </AnimatedSection>
 
               <AnimatedSection delay={150}>
-                <Card className="group hover:bg-card/80 transition-all duration-300 border-border/50">
-                  <CardHeader>
-                    <CardTitle className="text-xl">AI Itinerary</CardTitle>
-                    <CardDescription>
-                      Plan a day, then navigate it.
-                    </CardDescription>
-                  </CardHeader>
-                  <CardContent className="pt-4">
-                    <span className="text-primary hover:text-primary/80 cursor-pointer inline-flex items-center text-sm transition-colors">
-                      View Design <ExternalLink className="ml-1 h-3 w-3" />
-                    </span>
-                  </CardContent>
-                </Card>
+                <Link href="/arcgis-field-maps">
+                  <Card className="group hover:bg-card/80 transition-all duration-300 border-border/50 cursor-pointer">
+                    <CardHeader>
+                      <CardTitle className="text-xl">ArcGIS Field Maps</CardTitle>
+                      <CardDescription>
+                        Designing accuracy-focused workflows for survey-grade data collection.
+                      </CardDescription>
+                    </CardHeader>
+                    <CardContent className="pt-4">
+                      <span className="text-primary hover:text-primary/80 inline-flex items-center text-sm transition-colors">
+                        View Design <ExternalLink className="ml-1 h-3 w-3" />
+                      </span>
+                    </CardContent>
+                  </Card>
+                </Link>
               </AnimatedSection>
 
               <AnimatedSection delay={300}>
-                <Card className="group hover:bg-card/80 transition-all duration-300 border-border/50">
-                  <CardHeader>
-                    <CardTitle className="text-xl">Kiosk Experience</CardTitle>
-                    <CardDescription>
-                      Fast start for visitors and staff.
-                    </CardDescription>
-                  </CardHeader>
-                  <CardContent className="pt-4">
-                    <span className="text-primary hover:text-primary/80 cursor-pointer inline-flex items-center text-sm transition-colors">
-                      View Design <ExternalLink className="ml-1 h-3 w-3" />
-                    </span>
-                  </CardContent>
-                </Card>
+                <Link href="/foreflight-logbook">
+                  <Card className="group hover:bg-card/80 transition-all duration-300 border-border/50 cursor-pointer">
+                    <CardHeader>
+                      <CardTitle className="text-xl">ForeFlight Logbook</CardTitle>
+                      <CardDescription>
+                        Digital logbook designed for pilots who trust their records.
+                      </CardDescription>
+                    </CardHeader>
+                    <CardContent className="pt-4">
+                      <span className="text-primary hover:text-primary/80 inline-flex items-center text-sm transition-colors">
+                        View Design <ExternalLink className="ml-1 h-3 w-3" />
+                      </span>
+                    </CardContent>
+                  </Card>
+                </Link>
               </AnimatedSection>
             </div>
 
@@ -236,47 +243,56 @@ export default function Home() {
             </div>
             
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-              <Card className="hover:bg-card/80 transition-all duration-300 border-border/50">
-                <CardHeader>
-                  <CardTitle className="text-xl">Glamis Map</CardTitle>
-                  <CardDescription>
-                    Interactive map of the dunes with GPX and local history.
-                  </CardDescription>
-                </CardHeader>
-                <CardContent className="pt-4">
-                  <span className="text-primary hover:text-primary/80 cursor-pointer inline-flex items-center text-sm transition-colors">
-                    View App <ExternalLink className="ml-1 h-3 w-3" />
-                  </span>
-                </CardContent>
-              </Card>
+              <Link href="/glamis-map" className="block h-full">
+                <Card className="group h-full hover:bg-card/80 transition-all duration-300 border-border/50">
+                  <CardHeader>
+                    <CardTitle className="text-xl">Glamis Map</CardTitle>
+                    <CardDescription>
+                      Interactive map of the dunes with GPX and local history.
+                    </CardDescription>
+                  </CardHeader>
+                  <CardContent className="pt-4">
+                    <div className="flex items-center justify-between">
+                      <span className="text-primary group-hover:text-primary/80 transition-colors">View Project</span>
+                      <ExternalLink className="h-4 w-4 text-muted-foreground group-hover:text-foreground transition-colors" />
+                    </div>
+                  </CardContent>
+                </Card>
+              </Link>
 
-              <Card className="hover:bg-card/80 transition-all duration-300 border-border/50">
-                <CardHeader>
-                  <CardTitle className="text-xl">CampBase</CardTitle>
-                  <CardDescription>
-                    Group camping planner with offline maps and shared tasks.
-                  </CardDescription>
-                </CardHeader>
-                <CardContent className="pt-4">
-                  <span className="text-primary hover:text-primary/80 cursor-pointer inline-flex items-center text-sm transition-colors">
-                    View App <ExternalLink className="ml-1 h-3 w-3" />
-                  </span>
-                </CardContent>
-              </Card>
+              <Link href="/campbase" className="block h-full">
+                <Card className="group h-full hover:bg-card/80 transition-all duration-300 border-border/50">
+                  <CardHeader>
+                    <CardTitle className="text-xl">CampBase</CardTitle>
+                    <CardDescription>
+                      Group camping planner with offline maps and shared tasks.
+                    </CardDescription>
+                  </CardHeader>
+                  <CardContent className="pt-4">
+                    <div className="flex items-center justify-between">
+                      <span className="text-primary group-hover:text-primary/80 transition-colors">View Project</span>
+                      <ExternalLink className="h-4 w-4 text-muted-foreground group-hover:text-foreground transition-colors" />
+                    </div>
+                  </CardContent>
+                </Card>
+              </Link>
 
-              <Card className="hover:bg-card/80 transition-all duration-300 border-border/50">
-                <CardHeader>
-                  <CardTitle className="text-xl">Memory Map</CardTitle>
-                  <CardDescription>
-                    Photos tied to place and time with a QR print.
-                  </CardDescription>
-                </CardHeader>
-                <CardContent className="pt-4">
-                  <span className="text-primary hover:text-primary/80 cursor-pointer inline-flex items-center text-sm transition-colors">
-                    View App <ExternalLink className="ml-1 h-3 w-3" />
-                  </span>
-                </CardContent>
-              </Card>
+              <Link href="/memory-map" className="block h-full">
+                <Card className="group h-full hover:bg-card/80 transition-all duration-300 border-border/50">
+                  <CardHeader>
+                    <CardTitle className="text-xl">Memory Map</CardTitle>
+                    <CardDescription>
+                      Photos tied to place and time with a QR print.
+                    </CardDescription>
+                  </CardHeader>
+                  <CardContent className="pt-4">
+                    <div className="flex items-center justify-between">
+                      <span className="text-primary group-hover:text-primary/80 transition-colors">View Project</span>
+                      <ExternalLink className="h-4 w-4 text-muted-foreground group-hover:text-foreground transition-colors" />
+                    </div>
+                  </CardContent>
+                </Card>
+              </Link>
             </div>
 
             <div className="text-center pt-8">
