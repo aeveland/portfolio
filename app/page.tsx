@@ -115,7 +115,7 @@ export default function Home() {
                   <Card className="group hover:bg-card/80 transition-all duration-300 border-border/50 cursor-pointer overflow-hidden">
                     <div className="relative w-full aspect-video overflow-hidden">
                       <img 
-                        src="/ArcGISIndoors.PNG" 
+                        src="/ArcGISIndoors.jpg" 
                         alt="ArcGIS Indoors" 
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                       />
@@ -145,7 +145,7 @@ export default function Home() {
                   <Card className="group hover:bg-card/80 transition-all duration-300 border-border/50 cursor-pointer overflow-hidden">
                     <div className="relative w-full aspect-video overflow-hidden">
                       <img 
-                        src="/FieldMaps.PNG" 
+                        src="/FieldMaps.jpg" 
                         alt="ArcGIS Field Maps" 
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                       />
@@ -175,7 +175,7 @@ export default function Home() {
                   <Card className="group hover:bg-card/80 transition-all duration-300 border-border/50 cursor-pointer overflow-hidden">
                     <div className="relative w-full aspect-video overflow-hidden">
                       <img 
-                        src="/ForeFlight.PNG" 
+                        src="/ForeFlight.jpg" 
                         alt="ForeFlight Logbook" 
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                       />
@@ -276,7 +276,7 @@ export default function Home() {
                 <Card className="group h-full hover:bg-card/80 transition-all duration-300 border-border/50 overflow-hidden">
                   <div className="relative w-full aspect-video overflow-hidden">
                     <img 
-                      src="/GlamisMap.PNG" 
+                      src="/GlamisMap.jpg" 
                       alt="Glamis Map" 
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     />
@@ -305,7 +305,7 @@ export default function Home() {
                 <Card className="group h-full hover:bg-card/80 transition-all duration-300 border-border/50 overflow-hidden">
                   <div className="relative w-full aspect-video overflow-hidden">
                     <img 
-                      src="/CampBase.PNG" 
+                      src="/CampBase.jpg" 
                       alt="CampBase" 
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     />
@@ -334,7 +334,7 @@ export default function Home() {
                 <Card className="group h-full hover:bg-card/80 transition-all duration-300 border-border/50 overflow-hidden">
                   <div className="relative w-full aspect-video overflow-hidden">
                     <img 
-                      src="/MemoryMap.PNG" 
+                      src="/MemoryMap.jpg" 
                       alt="Memory Map" 
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     />
