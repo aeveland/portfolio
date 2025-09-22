@@ -43,6 +43,43 @@
     background: hsl(var(--background-a));
     /* Improve touch scrolling on mobile */
     -webkit-overflow-scrolling: touch;
+    /* Prevent word hyphenation and improve text wrapping */
+    text-wrap: pretty;
+    overflow-wrap: break-word;
+    hyphens: none;
+    -webkit-hyphens: none;
+    -ms-hyphens: none;
+  }
+  
+  /* Ensure all text elements inherit these properties */
+  * {
+    -webkit-hyphenate: none;
+    -ms-hyphenate-limit-chars: 0;
+    -ms-hyphenate-limit-lines: 0;
+    -ms-hyphenate-limit-zone: 0%;
+    -ms-hyphenate-limit-last: none;
+    -ms-hyphenate-limit-words: 0;
+  }
+  
+  /* Force no hyphenation for all text elements */
+  h1, h2, h3, h4, h5, h6, p, a, li, span, button, input, textarea, label, div {
+    word-break: keep-all;
+    overflow-wrap: normal;
+    white-space: normal;
+    hyphens: manual !important;
+    -webkit-hyphens: manual !important;
+    -ms-hyphenate-limit-chars: 0 !important;
+    -ms-hyphenate-limit-lines: 0 !important;
+  }
+  
+  /* Special handling for paragraphs and headings */
+  p, h1, h2, h3, h4, h5, h6 {
+    word-wrap: break-word;
+    word-break: normal;
+    -webkit-hyphens: none !important;
+    -moz-hyphens: none !important;
+    -ms-hyphens: none !important;
+    hyphens: none !important;
   }
   
   /* Improve touch targets for mobile */
