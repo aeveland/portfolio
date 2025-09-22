@@ -236,15 +236,7 @@ export default function Home() {
                 <ExternalLink className="h-5 w-5 text-muted-foreground hover:text-foreground transition-colors" />
               </div>
               <div className="flex items-center justify-between py-4 border-b border-border/30">
-                <span className="text-lg">Events on campus. From discovery to patterns and metrics.</span>
-                <ExternalLink className="h-5 w-5 text-muted-foreground hover:text-foreground transition-colors" />
-              </div>
-              <div className="flex items-center justify-between py-4 border-b border-border/30">
-                <span className="text-lg">Wallet sign in for kiosks. Tap to identify, then act.</span>
-                <ExternalLink className="h-5 w-5 text-muted-foreground hover:text-foreground transition-colors" />
-              </div>
-              <div className="flex items-center justify-between py-4 border-b border-border/30">
-                <span className="text-lg">Navigation improvements. Smoother routes and better context.</span>
+                <span className="text-lg">AI Itinerary. Simplifying the workday experience.</span>
                 <ExternalLink className="h-5 w-5 text-muted-foreground hover:text-foreground transition-colors" />
               </div>
             </div>
