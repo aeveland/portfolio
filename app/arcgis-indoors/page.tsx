@@ -38,7 +38,7 @@ export default function ArcGISIndoorsPage() {
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8">
                 <Button size="lg" variant="ghost">
                   <ExternalLink className="w-4 h-4 mr-2" />
-                  View Live App
+                  <a href="https://apps.apple.com/us/app/arcgis-indoors/id6741082549">View Live Project</a>
                 </Button>
               </div>
             </AnimatedSection>

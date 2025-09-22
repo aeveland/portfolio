@@ -38,7 +38,7 @@ export default function ArcGISFieldMapsPage() {
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8">
                 <Button size="lg" variant="ghost">
                   <ExternalLink className="w-4 h-4 mr-2" />
-                  View Live Project
+                  <a href="https://apps.apple.com/us/app/arcgis-field-maps/id1515671684">View Live Project</a>
                 </Button>
               </div>
             </AnimatedSection>

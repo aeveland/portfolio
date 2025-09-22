@@ -38,7 +38,7 @@ export default function GlamisMapPage() {
                 <Button size="lg" variant="ghost" asChild>
                   <a href="https://glamis-map.vercel.app" target="_blank" rel="noopener noreferrer">
                     <ExternalLink className="w-4 h-4 mr-2" />
-                    View Live Project
+                    <a href="http://www.glamis.com">View Live Project</a>
                   </a>
                 </Button>
                 <Button size="lg" variant="outline" asChild>
