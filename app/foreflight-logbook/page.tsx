@@ -87,14 +87,12 @@ export default function ForeFlightLogbookPage() {
               
               <AnimatedSection delay={200}>
                 <div className="relative">
-                  <div className="aspect-[4/3] bg-gradient-to-br from-blue-500/20 to-teal-500/20 rounded-lg flex items-center justify-center">
-                    <div className="text-center text-white/60">
-                      <div className="w-16 h-16 mx-auto mb-4 bg-white/10 rounded-lg flex items-center justify-center">
-                        ✈️
-                      </div>
-                      <p>ForeFlight Logbook</p>
-                      <p className="text-sm">Flight logging interface</p>
-                    </div>
+                  <div className="relative w-full rounded-lg overflow-hidden">
+                    <img 
+                      src="/ForeFlightLogbook.png" 
+                      alt="ForeFlight Logbook Interface" 
+                      className="w-full h-auto object-contain"
+                    />
                   </div>
                 </div>
               </AnimatedSection>
