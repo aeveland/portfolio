@@ -36,13 +36,13 @@ export default function GlamisMapPage() {
             <AnimatedSection delay={600}>
               <div className="flex flex-col sm:flex-row gap-4 pt-8">
                 <Button size="lg" variant="ghost" asChild>
-                  <a href="http://www.glamis.com" target="_blank" rel="noopener noreferrer">
+                  <a href="http://www.glamis.com/map/" target="_blank" rel="noopener noreferrer">
                     <ExternalLink className="w-4 h-4 mr-2" />
                     View Live Project
                   </a>
                 </Button>
                 <Button size="lg" variant="outline" asChild>
-                  <a href="https://github.com/yourusername/glamis-map" target="_blank" rel="noopener noreferrer">
+                  <a href="https://github.com/aeveland/glamis-map" target="_blank" rel="noopener noreferrer">
                     <Code className="w-4 h-4 mr-2" />
                     View Code
                   </a>
