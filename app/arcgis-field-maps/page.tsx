@@ -84,16 +84,14 @@ export default function ArcGISFieldMapsPage() {
               </AnimatedSection>
               
               <AnimatedSection delay={200}>
-                <div className="relative">
-                  <div className="aspect-[4/3] bg-gradient-to-br from-blue-500/20 to-purple-500/20 rounded-lg flex items-center justify-center">
-                    <div className="text-center text-white/60">
-                      <div className="w-16 h-16 mx-auto mb-4 bg-white/10 rounded-lg flex items-center justify-center">
-                        📱
-                      </div>
-                      <p>Hero Image Placeholder</p>
-                      <p className="text-sm">Replace with project screenshot</p>
-                    </div>
-                  </div>
+                <div className="relative aspect-[4/3] rounded-lg overflow-hidden bg-black/5 p-4 flex items-center justify-center">
+                  <Image 
+                    src="/FieldMapsHeroImagePlaceholder.png" 
+                    alt="ArcGIS Field Maps Interface" 
+                    fill
+                    className="object-contain"
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                  />
                 </div>
               </AnimatedSection>
             </div>
@@ -140,16 +138,14 @@ export default function ArcGISFieldMapsPage() {
           <div className="max-w-6xl mx-auto">
             <div className="grid lg:grid-cols-2 gap-16 items-center">
               <AnimatedSection>
-                <div className="relative">
-                  <div className="aspect-[4/3] bg-gradient-to-br from-green-500/20 to-blue-500/20 rounded-lg flex items-center justify-center">
-                    <div className="text-center text-white/60">
-                      <div className="w-16 h-16 mx-auto mb-4 bg-white/10 rounded-lg flex items-center justify-center">
-                        🎯
-                      </div>
-                      <p>Role & Responsibilities</p>
-                      <p className="text-sm">Replace with process diagram</p>
-                    </div>
-                  </div>
+                <div className="relative aspect-[4/3] rounded-lg overflow-hidden bg-black/5 p-4 flex items-center justify-center">
+                  <Image 
+                    src="/FieldMapsRoleResponsibilities.png" 
+                    alt="Field Maps Role and Responsibilities" 
+                    fill
+                    className="object-contain"
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                  />
                 </div>
               </AnimatedSection>
               
