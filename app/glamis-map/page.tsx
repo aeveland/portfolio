@@ -36,9 +36,9 @@ export default function GlamisMapPage() {
             <AnimatedSection delay={600}>
               <div className="flex flex-col sm:flex-row gap-4 pt-8">
                 <Button size="lg" variant="ghost" asChild>
-                  <a href="https://glamis-map.vercel.app" target="_blank" rel="noopener noreferrer">
+                  <a href="http://www.glamis.com" target="_blank" rel="noopener noreferrer">
                     <ExternalLink className="w-4 h-4 mr-2" />
-                    <a href="http://www.glamis.com">View Live Project</a>
+                    View Live Project
                   </a>
                 </Button>
                 <Button size="lg" variant="outline" asChild>
