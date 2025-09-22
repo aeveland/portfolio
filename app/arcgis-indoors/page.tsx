@@ -87,12 +87,12 @@ export default function ArcGISIndoorsPage() {
               </AnimatedSection>
               
               <AnimatedSection delay={200}>
-                <div className="relative aspect-[4/3] rounded-lg overflow-hidden">
+                <div className="relative aspect-[4/3] rounded-lg overflow-hidden bg-black/5 p-4 flex items-center justify-center">
                   <Image 
                     src="/appOverview.png" 
                     alt="ArcGIS Indoors App Overview" 
                     fill
-                    className="object-cover"
+                    className="object-contain p-4"
                     sizes="(max-width: 768px) 100vw, 50vw"
                   />
                 </div>
@@ -109,12 +109,12 @@ export default function ArcGISIndoorsPage() {
           <div className="max-w-6xl mx-auto">
             <div className="grid lg:grid-cols-2 gap-16 items-center">
               <AnimatedSection>
-                <div className="relative aspect-[4/3] rounded-lg overflow-hidden">
+                <div className="relative aspect-[4/3] rounded-lg overflow-hidden bg-black/5 p-4 flex items-center justify-center">
                   <Image 
                     src="/CoreWorkflows.png" 
                     alt="Core Workflows" 
                     fill
-                    className="object-cover"
+                    className="object-contain p-4"
                     sizes="(max-width: 768px) 100vw, 50vw"
                   />
                 </div>
@@ -235,12 +235,12 @@ export default function ArcGISIndoorsPage() {
               </AnimatedSection>
               
               <AnimatedSection delay={200}>
-                <div className="relative aspect-[4/3] rounded-lg overflow-hidden">
+                <div className="relative aspect-[4/3] rounded-lg overflow-hidden bg-black/5 p-4 flex items-center justify-center">
                   <Image 
                     src="/Cross-PlatformDesign.jpg" 
                     alt="Cross-Platform Design" 
                     fill
-                    className="object-cover"
+                    className="object-contain p-4"
                     sizes="(max-width: 768px) 100vw, 50vw"
                   />
                 </div>
