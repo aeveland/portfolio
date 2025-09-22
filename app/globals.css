@@ -103,6 +103,11 @@
     background: hsl(var(--background-b));
   }
   
+  /* Remove dark filter from project card images */
+  .project-card img {
+    filter: none !important;
+  }
+  
   /* Typography improvements for readability */
   h1, h2, h3, h4, h5, h6 {
     @apply font-semibold tracking-tight;

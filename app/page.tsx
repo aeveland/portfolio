@@ -278,15 +278,20 @@ export default function Home() {
             </div>
             
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-              <Link href="/glamis-map" className="block h-full">
-                <Card className="group h-full hover:bg-card/80 transition-all duration-300 border-border/50 overflow-hidden">
-                  <div className="relative w-full aspect-video overflow-hidden">
+              <Link href="/glamis-map" className="block h-full group">
+                <Card className="h-full hover:bg-card/80 transition-all duration-300 border-border/50 overflow-hidden bg-transparent">
+                  <div className="relative w-full aspect-video overflow-hidden bg-black">
                     <img 
                       src="/GlamisMap.jpg" 
                       alt="Glamis Map" 
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 brightness-100"
+                      style={{
+                        imageRendering: '-webkit-optimize-contrast',
+                        backfaceVisibility: 'hidden',
+                        transform: 'translateZ(0)'
+                      }}
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end pb-4 pl-6 pr-4">
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent flex items-end pb-4 pl-6 pr-4">
                       <div className="text-white">
                         <MapIcon className="w-6 h-6 mb-1.5 text-amber-300" />
                         <span className="text-base font-semibold">Glamis Map</span>
@@ -307,15 +312,20 @@ export default function Home() {
                 </Card>
               </Link>
 
-              <Link href="/campbase" className="block h-full">
-                <Card className="group h-full hover:bg-card/80 transition-all duration-300 border-border/50 overflow-hidden">
-                  <div className="relative w-full aspect-video overflow-hidden">
+              <Link href="/campbase" className="block h-full group">
+                <Card className="h-full hover:bg-card/80 transition-all duration-300 border-border/50 overflow-hidden bg-transparent">
+                  <div className="relative w-full aspect-video overflow-hidden bg-black">
                     <img 
                       src="/CampBase.jpg" 
                       alt="CampBase" 
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 brightness-100"
+                      style={{
+                        imageRendering: '-webkit-optimize-contrast',
+                        backfaceVisibility: 'hidden',
+                        transform: 'translateZ(0)'
+                      }}
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end pb-4 pl-6 pr-4">
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent flex items-end pb-4 pl-6 pr-4">
                       <div className="text-white">
                         <MapPin className="w-6 h-6 mb-1.5 text-green-300" />
                         <span className="text-base font-semibold">CampBase</span>
@@ -336,15 +346,20 @@ export default function Home() {
                 </Card>
               </Link>
 
-              <Link href="/memory-map" className="block h-full">
-                <Card className="group h-full hover:bg-card/80 transition-all duration-300 border-border/50 overflow-hidden">
-                  <div className="relative w-full aspect-video overflow-hidden">
+              <Link href="/memory-map" className="block h-full group">
+                <Card className="h-full hover:bg-card/80 transition-all duration-300 border-border/50 overflow-hidden bg-transparent">
+                  <div className="relative w-full aspect-video overflow-hidden bg-black">
                     <img 
                       src="/MemoryMap.jpg" 
                       alt="Memory Map" 
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 brightness-100"
+                      style={{
+                        imageRendering: '-webkit-optimize-contrast',
+                        backfaceVisibility: 'hidden',
+                        transform: 'translateZ(0)'
+                      }}
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end pb-4 pl-6 pr-4">
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent flex items-end pb-4 pl-6 pr-4">
                       <div className="text-white">
                         <QrCode className="w-6 h-6 mb-1.5 text-purple-300" />
                         <span className="text-base font-semibold">Memory Map</span>
