@@ -87,16 +87,14 @@ export default function ArcGISIndoorsPage() {
               </AnimatedSection>
               
               <AnimatedSection delay={200}>
-                <div className="relative">
-                  <div className="aspect-[4/3] bg-gradient-to-br from-indigo-500/20 to-purple-500/20 rounded-lg flex items-center justify-center">
-                    <div className="text-center text-white/60">
-                      <div className="w-16 h-16 mx-auto mb-4 bg-white/10 rounded-lg flex items-center justify-center">
-                        🏢
-                      </div>
-                      <p>App Overview</p>
-                      <p className="text-sm">Replace with before/after comparison</p>
-                    </div>
-                  </div>
+                <div className="relative aspect-[4/3] rounded-lg overflow-hidden">
+                  <Image 
+                    src="/appOverview.png" 
+                    alt="ArcGIS Indoors App Overview" 
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                  />
                 </div>
               </AnimatedSection>
             </div>
@@ -111,16 +109,14 @@ export default function ArcGISIndoorsPage() {
           <div className="max-w-6xl mx-auto">
             <div className="grid lg:grid-cols-2 gap-16 items-center">
               <AnimatedSection>
-                <div className="relative">
-                  <div className="aspect-[4/3] bg-gradient-to-br from-blue-500/20 to-cyan-500/20 rounded-lg flex items-center justify-center">
-                    <div className="text-center text-white/60">
-                      <div className="w-16 h-16 mx-auto mb-4 bg-white/10 rounded-lg flex items-center justify-center">
-                        🔍
-                      </div>
-                      <p>Core Workflows</p>
-                      <p className="text-sm">Replace with workflow diagram</p>
-                    </div>
-                  </div>
+                <div className="relative aspect-[4/3] rounded-lg overflow-hidden">
+                  <Image 
+                    src="/CoreWorkflows.png" 
+                    alt="Core Workflows" 
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                  />
                 </div>
               </AnimatedSection>
               
@@ -239,16 +235,14 @@ export default function ArcGISIndoorsPage() {
               </AnimatedSection>
               
               <AnimatedSection delay={200}>
-                <div className="relative">
-                  <div className="aspect-[4/3] bg-gradient-to-br from-emerald-500/20 to-teal-500/20 rounded-lg flex items-center justify-center">
-                    <div className="text-center text-white/60">
-                      <div className="w-16 h-16 mx-auto mb-4 bg-white/10 rounded-lg flex items-center justify-center">
-                        📱
-                      </div>
-                      <p>Cross-Platform Design</p>
-                      <p className="text-sm">Replace with mobile + kiosk mockup</p>
-                    </div>
-                  </div>
+                <div className="relative aspect-[4/3] rounded-lg overflow-hidden">
+                  <Image 
+                    src="/Cross-PlatformDesign.jpg" 
+                    alt="Cross-Platform Design" 
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                  />
                 </div>
               </AnimatedSection>
             </div>
