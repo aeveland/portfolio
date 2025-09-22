@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Andy Eveland - Product Designer',
-  description: 'Principal product designer specializing in mobile, web, and spatial experiences. I turn complex problems into simple, delightful products that just work.',
+  description: 'Designing clear, useful products for maps and location.',
   keywords: ['Product Designer', 'UX Designer', 'Mobile Design', 'Web Design', 'Spatial Design', 'Vision Pro', 'iOS', 'Android'],
   authors: [{ name: 'Andy Eveland' }],
   creator: 'Andy Eveland',

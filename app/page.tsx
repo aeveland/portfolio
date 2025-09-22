@@ -31,7 +31,7 @@ export default function Home() {
             <h1 className="text-4xl sm:text-5xl md:text-6xl">Andy Eveland</h1>
             <h2 className="text-xl sm:text-2xl text-muted-foreground">Product Designer</h2>
             <p className="text-muted-foreground max-w-2xl mx-auto text-sm sm:text-base">
-              I turn complex ideas into simple workflows across mobile, web, and&nbsp;spatial.
+            Designing clear, useful products for maps and location
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8">
               <Button 
