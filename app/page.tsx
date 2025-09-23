@@ -36,17 +36,19 @@ export default function Home() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8">
               <Button 
                 size="lg"
+                className="w-40"
                 onClick={() => {
                   document.getElementById('selected-work')?.scrollIntoView({ 
                     behavior: 'smooth' 
                   });
                 }}
               >
-                View Selected Work
+                View Work
               </Button>
               <Button 
                 variant="ghost" 
                 size="lg"
+                className="w-40"
                 onClick={() => {
                   document.getElementById('contact')?.scrollIntoView({ 
                     behavior: 'smooth' 
@@ -93,13 +95,14 @@ export default function Home() {
             <div className="text-center pt-8">
               <Button 
                 size="lg"
+                className="w-40"
                 onClick={() => {
                   document.getElementById('selected-work')?.scrollIntoView({ 
                     behavior: 'smooth' 
                   });
                 }}
               >
-                View Selected Work
+                View Work
               </Button>
             </div>
           </div>
